@@ -1,4 +1,4 @@
-const BASE_URL = "https://dummyjson.com";
+const BASE_URL = "https://fakestoreapi.com";
 
 const [metodo, recurso, ...restoArgs] = process.argv.slice(2);
 const [title, price, category] = restoArgs;
@@ -32,8 +32,7 @@ async function addProduct(title, price, category) {
   try {
     const newProductData = { title, price: Number(price), category };
 
-    const response = await fetch(`${BASE_URL}/products/add`, {
-      //eliminar el add si cambiamos la URL a fakeapi
+    const response = await fetch(`${BASE_URL}/products`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(newProductData),
