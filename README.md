@@ -1,6 +1,6 @@
 # Pre-Entrega Node.js - Talento Tech
 
-Proyecto desarrollado como primera pre-entrega para el curso de Node.js de **Talento Tech**.
+>Proyecto desarrollado como primera pre-entrega para el curso de Node.js de **Talento Tech**.
 Consiste en un script de línea de comandos (CLI) que interactúa con la API REST de **FakeStoreAPI** mediante peticiones HTTP asíncronas con **Fetch API** en Node.js.
 
 
