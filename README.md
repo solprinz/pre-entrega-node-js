@@ -1,6 +1,7 @@
 # Pre-Entrega Node.js - Talento Tech
 
-Proyecto desarrollado como primera pre-entrega para el curso de Node.js de **Talento Tech**
+Proyecto desarrollado como primera pre-entrega para el curso de Node.js de **Talento Tech**.
+Consiste en un script de línea de comandos (CLI) que interactúa con la API REST de **FakeStoreAPI** mediante peticiones HTTP asíncronas con **Fetch API** en Node.js.
 
 
 ---
@@ -64,7 +65,7 @@ Envía una petición para simular la eliminación del producto indicado.
 
 * ESModules ("type": "module"): Permite el uso de sintaxis moderna de módulos y Top-Level await.
 
-* Fetch API: Cliente HTTP nativo para realizar peticiones asíncronas (async/await).
+* Fetch API: Cliente HTTP nativo para realizar peticiones asíncronas (async/await) conectadas a `fakestoreapi.com`
 
 * Manejo de Errores (try / catch): Previene bloqueos no controlados del programa ante posibles caídas de la red.
 
@@ -73,6 +74,3 @@ Envía una petición para simular la eliminación del producto indicado.
 ---
 ## Autora
 Sol Prinzen
-
->  Nota sobre la API utilizada:
-> Debido a inestabilidades persistentes en el servidor oficial de la consigna (fakestoreapi.com) —el cual se encontraba devolviendo páginas de error en HTML (<!DOCTYPE html>) e impidiendo el parseo JSON—, se utilizó DummyJSON (dummyjson.com) como base para posibilitar el testing y garantizar la ejecución fluida de todas las operaciones. La lógica de comandos y parámetros en index.js respeta al 100% las especificaciones de la entrega.
