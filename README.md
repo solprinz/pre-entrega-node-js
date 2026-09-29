@@ -16,8 +16,8 @@ Proyecto desarrollado como primera pre-entrega para el curso de Node.js de **Tal
 
 1. Clonar el repositorio:
    ```bash
-   git clone [https://github.com/solprinz/pre-entrega-node-js.git](https://github.com/solprinz/pre-entrega-node-js.git)
-
+   git clone https://github.com/solprinz/pre-entrega-node-js.git
+   
 2. Ingresar a la carpeta del proyecto:
 
    ```bash
@@ -30,28 +30,33 @@ Proyecto desarrollado como primera pre-entrega para el curso de Node.js de **Tal
 ## Comandos de Uso
 El script se ejecuta mediante el comando `npm run start` pasando la acción y los argumentos dinámicos que son leídos con process.argv:
 
-* **Consultar todos los productos (GET)**
+### Consultar todos los productos (GET)
 Realiza una petición asíncrona para obtener el listado completo de productos.
 
-  ```bash
-  npm run start GET products
+```bash
+npm run start GET products
+```
 
-* **Consultar un producto específico por ID (GET)**
+### Consultar un producto específico por ID (GET)
 Obtiene el detalle de un único producto especificando su ID.
 
   ```bash
   npm run start GET products/15
+```
 
-* **Crear un producto nuevo (POST)**
+### Crear un producto nuevo (POST)
 Envía una solicitud para agregar un producto pasando los argumentos: <title>, <price> y <category>. Devuelve el nuevo objeto con su id asignado.
+  
   ```bash
   npm run start POST products T-Shirt-Rex 300 remeras
+```
 
-* **Eliminar un producto por ID (DELETE)**
+### Eliminar un producto por ID (DELETE)
 Envía una petición para simular la eliminación del producto indicado.
 
   ```bash
   npm run start DELETE products/7
+```
 
 ---
 ## Tecnologías e Implementación
